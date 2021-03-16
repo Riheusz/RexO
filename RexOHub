@@ -1,7 +1,6 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+--Made By Riheusz
+--Git hub Riheusz
+--Discord Rihi#3276
 
 local RexO = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
