@@ -1,0 +1,212 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local RexO = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextTittleMain = Instance.new("TextLabel")
+local MainHub = Instance.new("Frame")
+local AutoFarmLoad = Instance.new("TextButton")
+local AutoFarmTextTittle = Instance.new("TextLabel")
+local RejoinScriptLoadTittle = Instance.new("TextLabel")
+local FlyLoad = Instance.new("TextButton")
+local Rejoin = Instance.new("TextButton")
+local FlyTittle = Instance.new("TextLabel")
+local WaterMark = Instance.new("Frame")
+local WaterMark_2 = Instance.new("TextLabel")
+local Login = Instance.new("Frame")
+local LoginTittle = Instance.new("TextLabel")
+local KeyHere = Instance.new("TextBox")
+local EnterKeyTittle = Instance.new("TextLabel")
+local Submit = Instance.new("TextButton")
+
+--Properties:
+
+RexO.Name = "RexO"
+RexO.Parent = game.CoreGui
+RexO.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = RexO
+Main.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Main.Position = UDim2.new(-3.61582693e-08, 0, 0.418940604, 0)
+Main.Size = UDim2.new(0, 306, 0, 25)
+Main.Visible = false
+
+TextTittleMain.Name = "TextTittleMain"
+TextTittleMain.Parent = Main
+TextTittleMain.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+TextTittleMain.Size = UDim2.new(0, 306, 0, 25)
+TextTittleMain.Font = Enum.Font.SourceSans
+TextTittleMain.Text = "RexO"
+TextTittleMain.TextColor3 = Color3.fromRGB(108, 108, 108)
+TextTittleMain.TextSize = 14.000
+
+MainHub.Name = "MainHub"
+MainHub.Parent = Main
+MainHub.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+MainHub.Position = UDim2.new(0, 0, 1, 0)
+MainHub.Size = UDim2.new(0, 306, 0, 167)
+
+AutoFarmLoad.Name = "AutoFarmLoad"
+AutoFarmLoad.Parent = MainHub
+AutoFarmLoad.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+AutoFarmLoad.BackgroundTransparency = 0.850
+AutoFarmLoad.Position = UDim2.new(0, 0, 0.167664677, 0)
+AutoFarmLoad.Size = UDim2.new(0, 150, 0, 25)
+AutoFarmLoad.Font = Enum.Font.SourceSans
+AutoFarmLoad.Text = "Load-AutoFarm"
+AutoFarmLoad.TextColor3 = Color3.fromRGB(108, 108, 108)
+AutoFarmLoad.TextSize = 14.000
+AutoFarmLoad.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/HvzE1Tz3'))()	
+end)
+
+AutoFarmTextTittle.Name = "AutoFarmTextTittle"
+AutoFarmTextTittle.Parent = MainHub
+AutoFarmTextTittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarmTextTittle.BackgroundTransparency = 1.000
+AutoFarmTextTittle.Position = UDim2.new(-0.00326797389, 0, 0, 0)
+AutoFarmTextTittle.Size = UDim2.new(0, 150, 0, 26)
+AutoFarmTextTittle.Font = Enum.Font.SourceSans
+AutoFarmTextTittle.Text = "Auto Farm"
+AutoFarmTextTittle.TextColor3 = Color3.fromRGB(108, 108, 108)
+AutoFarmTextTittle.TextSize = 14.000
+
+RejoinScriptLoadTittle.Name = "RejoinScriptLoadTittle"
+RejoinScriptLoadTittle.Parent = MainHub
+RejoinScriptLoadTittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RejoinScriptLoadTittle.BackgroundTransparency = 1.000
+RejoinScriptLoadTittle.Position = UDim2.new(0.506535947, 0, 0, 0)
+RejoinScriptLoadTittle.Size = UDim2.new(0, 150, 0, 25)
+RejoinScriptLoadTittle.Font = Enum.Font.SourceSans
+RejoinScriptLoadTittle.Text = "Rejoin game"
+RejoinScriptLoadTittle.TextColor3 = Color3.fromRGB(108, 108, 108)
+RejoinScriptLoadTittle.TextSize = 14.000
+
+FlyLoad.Name = "FlyLoad"
+FlyLoad.Parent = MainHub
+FlyLoad.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+FlyLoad.BackgroundTransparency = 0.850
+FlyLoad.Position = UDim2.new(-0.00326797389, 0, 0.437125742, 0)
+FlyLoad.Size = UDim2.new(0, 150, 0, 26)
+FlyLoad.Font = Enum.Font.SourceSans
+FlyLoad.Text = "Load-Fly"
+FlyLoad.TextColor3 = Color3.fromRGB(108, 108, 108)
+FlyLoad.TextSize = 14.000
+FlyLoad.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/5GWNQ1Ys'))()	
+end)
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = Main
+Rejoin.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Rejoin.BackgroundTransparency = 0.850
+Rejoin.Position = UDim2.new(0.506535947, 0, 2.11999989, 0)
+Rejoin.Size = UDim2.new(0, 150, 0, 25)
+Rejoin.Font = Enum.Font.SourceSans
+Rejoin.Text = "Load-Rejoin"
+Rejoin.TextColor3 = Color3.fromRGB(108, 108, 108)
+Rejoin.TextSize = 14.000
+Rejoin.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/6m1rZ2Hp'))()	
+end)
+
+FlyTittle.Name = "FlyTittle"
+FlyTittle.Parent = Main
+FlyTittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlyTittle.BackgroundTransparency = 1.000
+FlyTittle.Position = UDim2.new(-0.00326797389, 0, 2.92000008, 0)
+FlyTittle.Size = UDim2.new(0, 150, 0, 25)
+FlyTittle.Font = Enum.Font.SourceSans
+FlyTittle.Text = "Fly"
+FlyTittle.TextColor3 = Color3.fromRGB(108, 108, 108)
+FlyTittle.TextSize = 14.000
+
+WaterMark.Name = "WaterMark"
+WaterMark.Parent = RexO
+WaterMark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WaterMark.BackgroundTransparency = 1.000
+WaterMark.Size = UDim2.new(0, 100, 0, 30)
+
+WaterMark_2.Name = "WaterMark"
+WaterMark_2.Parent = WaterMark
+WaterMark_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WaterMark_2.BackgroundTransparency = 1.000
+WaterMark_2.Position = UDim2.new(-0.00999999046, 0, 0, 0)
+WaterMark_2.Size = UDim2.new(0, 100, 0, 30)
+WaterMark_2.Font = Enum.Font.SourceSans
+WaterMark_2.Text = "Made By Rihi#3276"
+WaterMark_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+WaterMark_2.TextSize = 14.000
+
+Login.Name = "Login"
+Login.Parent = RexO
+Login.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Login.BackgroundTransparency = 1.000
+Login.Size = UDim2.new(0, 1536, 0, 717)
+
+LoginTittle.Name = "LoginTittle"
+LoginTittle.Parent = Login
+LoginTittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginTittle.BackgroundTransparency = 0.900
+LoginTittle.Position = UDim2.new(0.42101106, 0, 0.23595506, 0)
+LoginTittle.Size = UDim2.new(0, 200, 0, 50)
+LoginTittle.Font = Enum.Font.SourceSans
+LoginTittle.Text = "Login "
+LoginTittle.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginTittle.TextSize = 14.000
+
+KeyHere.Name = "KeyHere"
+KeyHere.Parent = Login
+KeyHere.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyHere.BackgroundTransparency = 0.900
+KeyHere.Position = UDim2.new(0.42101106, 0, 0.396468699, 0)
+KeyHere.Size = UDim2.new(0, 200, 0, 50)
+KeyHere.Font = Enum.Font.SourceSans
+KeyHere.Text = ""
+KeyHere.TextColor3 = Color3.fromRGB(0, 0, 0)
+KeyHere.TextSize = 14.000
+
+EnterKeyTittle.Name = "EnterKeyTittle"
+EnterKeyTittle.Parent = Login
+EnterKeyTittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnterKeyTittle.BackgroundTransparency = 0.900
+EnterKeyTittle.Position = UDim2.new(0.42101106, 0, 0.316211879, 0)
+EnterKeyTittle.Size = UDim2.new(0, 200, 0, 50)
+EnterKeyTittle.Font = Enum.Font.SourceSans
+EnterKeyTittle.Text = "\\/ Enter Key \\/"
+EnterKeyTittle.TextColor3 = Color3.fromRGB(0, 0, 0)
+EnterKeyTittle.TextSize = 14.000
+
+Submit.Name = "Submit"
+Submit.Parent = Login
+Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Submit.BackgroundTransparency = 0.900
+Submit.Position = UDim2.new(0.42101106, 0, 0.476725519, 0)
+Submit.Size = UDim2.new(0, 200, 0, 50)
+Submit.Font = Enum.Font.SourceSans
+Submit.Text = "Submit"
+Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Submit.TextSize = 14.000
+Submit.MouseButton1Click:connect(function()
+	if KeyHere.Text == "ZM@:>F!&}@6e$yvx" then
+		Login.Visible = false
+		Main.Visible = true
+	end
+end)
+
+-- Scripts:
+
+local function HPHQ_fake_script() -- RexO.LocalScript 
+	local script = Instance.new('LocalScript', RexO)
+
+	--By DriedUpCat
+	
+	frame = script.Parent.Main
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(HPHQ_fake_script)()
